@@ -1,8 +1,43 @@
 <html>
     <head>
+        <script src="TDLCode.js"></script>
+        <link rel = "stylesheet" href="TDLStyle.css">
+        <meta charset="UTF-8">
+        <title>TO DO LIST</title>
 
     </head>
     <body>
+        <h1 id="myHeader">TO DO LIST</h1>
+
+        <input id="Addbutton" type="button" value="ADD" onclick="addTask()">
+        <input id="TextInput" type="text" placeholder="What task you should do?">
+            
+
+        <hr>
+            
+        <ul id="tasks">
+        <li>
+            <input type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;" />
+            <input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;" />
+            Make a To-Do list!
+        </li>
         
+        </ul>
+        
+        <hr>
+
+        <div id="divabout">
+            <input type="button" onclick="doAbout()" value="About">
+        </div>
+        
+        <hr>
+
+        <div id="clear">
+            <input type="button" value="Clear About" onclick="clearAbout()"> 
+        </div>  
+        
+
+            
     </body>
+
 </html>
